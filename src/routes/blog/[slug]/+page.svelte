@@ -34,6 +34,9 @@
       </p>
     </section>
     <section>
+      <img src={`${url}assets/${data.blog.cover_image}`} />
+    </section>
+    <section>
       {#each data.blog.blocks as block}
         {#if block.collection === "block_paragraph"}
           {@html block.item.content}
