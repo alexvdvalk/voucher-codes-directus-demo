@@ -1,6 +1,7 @@
 <script lang="ts">
   import { url } from "$lib/directus";
   import type { PageData } from "./$types";
+  import { dev } from "$app/environment";
 
   export let data: PageData;
 </script>
@@ -50,6 +51,6 @@
   </aside>
 </section>
 
-<pre>
+{#if dev}
   {JSON.stringify(data, null, 2)}
-</pre>
+{/if}

@@ -1,5 +1,6 @@
 export interface BlogsResponse {
   title: string;
+  slug: string;
   blogs: Blog[];
 }
 
