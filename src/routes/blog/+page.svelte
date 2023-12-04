@@ -32,5 +32,7 @@
 {/each}
 
 {#if dev}
-  {JSON.stringify(data, null, 2)}
+  <pre>
+    {JSON.stringify(data, null, 2)}
+  </pre>
 {/if}
