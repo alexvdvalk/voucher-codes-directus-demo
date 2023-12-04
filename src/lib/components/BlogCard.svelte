@@ -6,7 +6,7 @@
 </script>
 
 <li
-  class="mt-4 my-4 inline-block w-80 whitespace-normal px-2 md:w-1/3 lg:w-1/4 transition-all hover:scale-105"
+  class="mt-4 my-4 inline-block w-full whitespace-normal px-2 md:w-1/3 lg:w-1/4 transition-transform hover:scale-105"
 >
   <a
     href={`/blog/${card.slug}`}

@@ -10,7 +10,7 @@
   <section>
     <header class="flex items-center">
       <div class="w-1/2 md:w-4/5">
-        <h2 class="md:pl-1/4 pl-2 text-base md:text-center md:text-2xl">
+        <h2 class="md:pl-[25%] pl-2 text-base md:text-center md:text-2xl">
           {blogSection.title}
         </h2>
       </div>
