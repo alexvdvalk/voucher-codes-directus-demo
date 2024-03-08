@@ -1,4 +1,4 @@
-<div class="bg-[#00c27e] mb-1">
+<div class="bg-[var(--color\_main)] mb-1">
   <div class="container mx-aut flex flex-row justify-between px-2">
     <div class="flex flex-col md:flex-row">
       <div class="my-auto">
@@ -77,7 +77,7 @@
         >
           <svg
             alt="Icon cross"
-            class="h-4 w-4 fill-current text-green-700 dark:text-liquorice lg:hidden hidden"
+            class="h-4 w-4 fill-current text-[var(--color_main)] dark:text-liquorice lg:hidden hidden"
             role="presentation"
             focusable="false"
             tabindex="-1"

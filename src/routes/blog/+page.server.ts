@@ -9,6 +9,7 @@ export const load = (async () => {
       fields: [
         "title",
         "slug",
+        "blogs.*",
         "blogs.user_created.first_name",
         "blogs.user_created.last_name",
         "blogs.title",

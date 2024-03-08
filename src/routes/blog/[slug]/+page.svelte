@@ -34,15 +34,15 @@
       </p>
     </section>
     <section>
-      <img src={`${url}assets/${data.blog.cover_image}`} />
+      <img src={`${url}/assets/${data.blog.cover_image}`} />
     </section>
     <section>
       {#each data.blog.blocks as block}
-        {#if block.collection === "block_paragraph"}
+        {#if block.collection === "blog_block_paragraph"}
           {@html block.item.content}
-        {:else if block.collection === "block_image"}
+        {:else if block.collection === "blog_bloc_image"}
           <img
-            src={`${url}assets/${block.item.image}`}
+            src={`${url}/assets/${block.item.image}`}
             alt={block.item.alt_text}
           />
         {/if}

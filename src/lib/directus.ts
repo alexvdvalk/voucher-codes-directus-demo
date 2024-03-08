@@ -1,4 +1,4 @@
-export const url = "https://voucher-codes-alex.directus.app/";
+export const url = "https://avcloudloader.directus.app";
 import {
   createDirectus,
   readCollections,

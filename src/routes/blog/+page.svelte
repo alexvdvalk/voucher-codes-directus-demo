@@ -16,7 +16,7 @@
       </div>
       <a
         href={`/blog/${blogSection.slug}`}
-        class="w-1/2 pr-2 text-right text-xs font-bold leading-tight text-green-700 dark:text-liquorice md:w-1/5 md:text-base"
+        class="w-1/2 pr-2 text-right text-xs font-bold leading-tight text-[var(--color-main)] dark:text-liquorice md:w-1/5 md:text-base"
       >
         View All {blogSection.title}</a
       >

@@ -17,7 +17,7 @@
     >
       <img
         decoding="async"
-        src={`${url}assets/${card.cover_image}`}
+        src={`${url}/assets/${card.cover_image}`}
         loading="lazy"
         alt="How to make a Christmas Eve box on a budget "
         class="h-64 object-cover w-full rounded-t md:h-48"
@@ -40,8 +40,8 @@
         </div>
         <div class="mt-2 flex justify-between">
           <p class="pt-2 text-xs font-normal text-gray-700">
-            {card.user_created.first_name}
-            {card.user_created.last_name}
+            {card.user_created?.first_name}
+            {card.user_created?.last_name}
           </p>
           <div class="mt-2 flex h-4 flex-row items-center">
             <svg
