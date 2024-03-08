@@ -9,21 +9,12 @@
 <section class="mb-4 flex flex-col md:mx-auto md:max-w-6xl md:flex-row">
   <article class="relative w-full rounded bg-white p-4 md:mr-10 md:w-9/12">
     <p class="upper font-bold">
-      <span>
-        {data.blog.section.title}
-      </span>
-      {#if data.blog.other_sections.length > 0}
-        <span> , </span>
-        {#each data.blog.other_sections as sec, index}
-          <span>
-            {sec.blog_section_id.title}
-
-            {#if index < data.blog.other_sections.length - 1}
-              ,
-            {/if}
-          </span>
-        {/each}
-      {/if}
+      {data.blog.section.title}
+      {#each data.blog.other_sections as sec, index}
+        {@const lastItem = index < data.blog.other_sections.length - 1}
+        {lastItem ? "," : ""}
+        {sec.blog_section_id.title}
+      {/each}
     </p>
     <section>
       <h1>

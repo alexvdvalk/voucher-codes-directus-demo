@@ -12,7 +12,9 @@ export const load = (async ({ url, params }) => {
         {
           user_created: ["first_name", "last_name"],
         },
-        "section.title",
+        {
+          section: ["id,title"],
+        },
         "publish_date",
         "title",
         "cover_image",
