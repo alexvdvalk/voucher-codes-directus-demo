@@ -1,4 +1,4 @@
-export const url = "https://avcloudloader.directus.app";
+export const url = "https://avcloud.directus.app";
 import {
   createDirectus,
   readCollections,
