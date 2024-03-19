@@ -9,7 +9,7 @@
   class="mt-4 my-4 inline-block w-full whitespace-normal px-2 md:w-1/3 lg:w-1/4 transition-transform hover:scale-105"
 >
   <a
-    href={`/blog/${card.slug}`}
+    href={`/blog/${card?.slug}`}
     class="w-full cursor-pointer hover:no-underline focus:no-underline active:no-underline"
     data-qa="el:articleCard"
     ><article
@@ -17,7 +17,7 @@
     >
       <img
         decoding="async"
-        src={`${url}/assets/${card.cover_image}`}
+        src={`${url}/assets/${card?.cover_image}`}
         loading="lazy"
         alt="How to make a Christmas Eve box on a budget "
         class="h-64 object-cover w-full rounded-t md:h-48"
@@ -26,14 +26,14 @@
         <p
           class="inline-block rounded bg-blue-400 px-2 text-xs font-normal uppercase leading-relaxed text-white"
         >
-          {card.section.title}
+          {card?.section?.title}
         </p>
         <!---->
         <div>
           <h2
             class="py-1 text-base leading-6 line-clamp-2 h-12 overflow-hidden break-words"
           >
-            {card.title}
+            {card?.title}
           </h2>
 
           <!---->
@@ -64,7 +64,7 @@
               class="text-xs font-normal text-gray-700"
               data-qa="el:articleDateCreated"
             >
-              {card.publish_date}
+              {card?.publish_date}
             </p>
           </div>
         </div>

@@ -1,10 +1,11 @@
 import type { PageServerLoad } from "./$types";
-import { client } from "$lib/directus";
+import getClient from "$lib/directus";
 import { readItems } from "@directus/sdk";
 import { error } from "@sveltejs/kit";
 import type { Blog } from "$lib/interfaces";
 
-export const load = (async ({ url, params }) => {
+export const load = (async ({ url, params, fetch }) => {
+  const client = getClient(fetch);
   const { slug } = params;
   const result = await client.request<Blog[]>(
     readItems("blog", {
@@ -37,8 +38,8 @@ export const load = (async ({ url, params }) => {
   );
   if (result.length === 0) {
     error(404, {
-            message: "Not found",
-          });
+      message: "Not found",
+    });
   }
   return { blog: result[0] };
 }) satisfies PageServerLoad;
