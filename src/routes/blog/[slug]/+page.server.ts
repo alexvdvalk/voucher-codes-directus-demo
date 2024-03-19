@@ -36,9 +36,9 @@ export const load = (async ({ url, params }) => {
     })
   );
   if (result.length === 0) {
-    throw error(404, {
-      message: "Not found",
-    });
+    error(404, {
+            message: "Not found",
+          });
   }
   return { blog: result[0] };
 }) satisfies PageServerLoad;
